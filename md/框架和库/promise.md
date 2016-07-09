@@ -84,15 +84,15 @@ promise.then(Fulfilled,Rejected)
 
 ## 5. promise 做为函数的返回值
 ```
-function ajax (queryUrl) {
-  return new Promise((reslove, reject) => {
+function ajaxPromise (queryUrl) {
+  return new Promise((resolve, reject) => {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', queryUrl, true);
     xhr.send(null);
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          reslove(xhr.responseText);
+          resolve(xhr.responseText);
         } else {
           reject(xhr.responseText);
         }
@@ -165,7 +165,7 @@ Promise.race([p1, p2]).then(function (result) {
 
 ## 8. q的用法
 ```
-var Q = require('q);
+var Q = require('q');
 var deferred = Q.defer();
   setTimeout(function() {
      deferred.resolve();
@@ -173,7 +173,7 @@ var deferred = Q.defer();
   return deferred.promise;
 ```
 
-## 9. blurbird
+## 9. bluebird
 实现 promise 标准的库是功能最全，速度最快的一个库
 ```
 var Promise = require('bluebird');
