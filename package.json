@@ -36,9 +36,6 @@
                 ]
             },
             {
-                "HTML": []
-            },
-            {
                 "JAVASCRIPT": [
                     "ES6.md",
                     "缓存.md",
@@ -49,7 +46,8 @@
                     "初识JS.md",
                     "原型链.md",
                     "预解析作用域闭包this.md",
-                    "webstorage.md"
+                    "webstorage.md",
+                    "正则表达式.md"
                 ]
             },
             {
@@ -85,13 +83,17 @@
                     "babel.md",
                     "bower.md",
                     "gulp.md",
-                    "NPM.md",
                     "promise.md",
                     "react-router.md",
                     "react.md",
                     "react基础应用.md",
-                    "react路由应用.md",
-                    "webpack.md"
+                    "webpack.md",
+                    "NPM.md"
+                ]
+            },
+            {
+                "服务器": [
+                    "ubunt配置PHP.md"
                 ]
             }
         ]
